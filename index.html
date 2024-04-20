@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
+            <div class="navbar">
+                <a href="" class="nav-link">Product</a>
+                <a href="" class="nav-link">Widget</a>
+                <a href="" class="nav-link">Pricing</a>
+                <a href="" class="smile"><i class='bx bx-smile'></i></a>
+                <div class="sign">
+                    <a href="">Sign in</a>
+                    <button>Sign in</button>
+                </div>
+                <button id="burger-menu" class="burger-menu" onclick="toggleSidebar()">
+                    <i class='bx bx-menu'></i>
+                </button>
+                
+                
+            </div>
+            <div class="sidebar">
+                <a href="" class="nav-link">Product</a>
+                <a href="" class="nav-link">Widget</a>
+                <a href="" class="nav-link">Pricing</a>
+            </div>
+        </div>
+        <hr>
+        <div class="main">
+            <div class="text">
+                <div class="box">
+                    <h1 class="text-center tracking-tighter font-bold text-2.25 md:text-4.125 lg:text-[5rem] leading-heading text-text">A better way to collect 
+                        <br> 
+                        customer feedback
+                    </h1>
+                    <div class="sub-box">
+                        <p>Capture, organize, and announce product feedback in one place.</p>
+                        <div class="sub-box1">
+                            <div class="sub-box2">
+                                <a href="">
+                                    <button>Get Started <span><i class='bx bx-arrow-back bx-flip-horizontal' ></i></span></button>
+                                </a>
+                                <p class="text-0.75 font-medium leading-tight py-4">14-day free trial — no credit card required</p>
+                            </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    function toggleSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.classList.toggle('active');
+}
+
+</script>
+</body>
+</html>
