@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pricing.css">
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
+            <div class="navbar">
+                <a href="" class="nav-link">Product</a>
+                <a href="" class="nav-link">Widget</a>
+                <a href="" class="nav-link">Pricing</a>
+                <a href="" class="smile"><i class='bx bx-smile'></i></a>
+                <div class="sign">
+                    <a href="">Sign in</a>
+                    <button>Sign in</button>
+                </div>
+                <button id="burger-menu" class="burger-menu" onclick="toggleSidebar()">
+                    <i class='bx bx-menu'></i>
+                </button>
+            </div>
+            <div class="sidebar">
+                <a href="" class="nav-link" onclick="nextPage()">Product</a>
+                <a href="" class="nav-link">Widget</a>
+                <a href="" class="nav-link">Pricing</a>
+            </div>
+        </div>
+        <div class="main">
+            <div class="productimg">
+                <img src="product.png" alt="">
+            </div>
+            <div class="content">
+                <div class="text">
+                    <h1>Base CRM</h1>
+                    <p>Unlimited Clients <br>
+                        Unlimited Teammates <br>
+                        Unlimited Quotations <br>
+                        Customized Reports <br>
+                        Front-End-Website</p>
+                </div>
+                <hr>
+                <div class="pricing">
+                    <div class="memory">
+                        <h3>Memory</h3>
+                        <p>How much memory is right for you?</p>
+                        <div class="boxes" id="pricing1">
+                            
+                            <div class="box active" id="box1" onclick="toggleBorderPricing1(this)">
+                                <h3>16GB unified memory</h3>
+                            </div>
+                            <div class="box" id="box2" onclick="toggleBorderPricing1(this)">
+                                <h3>24GB unified memory</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricing">
+                    <div class="memory">
+                        <h3>Storage</h3>
+                        <p>How much storage is right for you?</p>
+                        <div class="boxes" id="pricing2">
+                            
+                            <div class="box active" id="box3" onclick="toggleBorderPricing2(this)">
+                                <h3>256GB SSD storage</h3>
+                            </div>
+                            <div class="box" id="box4" onclick="toggleBorderPricing2(this)">
+                                <h3>512GB SSD storage</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricing">
+                    <div class="memory">
+                        <h3>Power</h3>
+                        <p>How power adapter is right for you?</p>
+                        <div class="boxes" id="pricing3">
+                            
+                            <div class="box active" id="box5" onclick="toggleBorderPricing3(this)">
+                                <h3>35W Dual USB-C Port Power Adapter</h3>
+                            </div>
+                            <div class="box" id="box6" onclick="toggleBorderPricing3(this)">
+                                <h3>70W USB-C Power Adapter</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="total">
+                <h3>MRP ₹<span id="price">174900.00</span>
+                    <br>(Incl. of all taxes)</h3>
+                    <button class="btn">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
